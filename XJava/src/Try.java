@@ -7,8 +7,7 @@ public class Try {
         System.out.println(ddd);
     }
 
-
-    static class Cat {
+    private static class Cat {
 
         String name;
         String breed; //порода
@@ -16,7 +15,7 @@ public class Try {
         int age;
         double weight; //вес
 
-        public Cat() {
+        Cat() {
             this.name = "no name";
             this.breed = "no breed";
             this.color = "no color";
