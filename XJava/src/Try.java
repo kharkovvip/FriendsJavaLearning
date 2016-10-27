@@ -2,9 +2,11 @@
  * Created by x_prt_000 on 25.10.2016
  */
 public class Try {
+
     public static void main(String[] args) {
-        Cat ddd = new Cat();
-        System.out.println(ddd);
+        Cat cat1 = new Cat(Constants.CAT_1);
+        Cat cat2 = new Cat(Constants.CAT_3);
+
     }
 
     private static class Cat {
@@ -15,10 +17,10 @@ public class Try {
         int age;
         double weight; //вес
 
-        Cat() {
-            this.name = "no name";
-            this.breed = "no breed";
-            this.color = "no color";
+        public Cat() {
+            this.name = Constants.NO_NAME;
+            this.breed = Constants.NO_BREED;
+            this.color = Constants.NO_COLOR;
             this.age = 0;
             this.weight = 0.0;
         }
